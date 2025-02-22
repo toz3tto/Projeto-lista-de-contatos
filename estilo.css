@@ -1,0 +1,93 @@
+/* Estilos gerais para HTML e Body */
+html, body {
+    height: 100%; /* Faz com que o HTML e o Body ocupem 100% da altura da tela */
+}
+
+/* Estilos para o Body */
+body {
+    background-color: rgb(82, 83, 83); /* Cor de fundo cinza escuro */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Define a fonte padrão */
+
+    /* Centraliza o conteúdo vertical e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinha os itens em coluna */
+}
+
+/* Estilo para o título principal */
+.main-title {
+    color: white; /* Cor do texto branco */
+    font-size: 30px; /* Tamanho da fonte */
+}
+
+/* Estilo para a lista de contatos */
+.list {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove as margens padrão */
+}
+
+/* Estilo para cada item da lista */
+.list-item {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    border-bottom: 1px solid; /* Adiciona uma borda inferior */
+    color: black; /* Cor do texto preto */
+    padding: 16px; /* Espaçamento interno */
+}
+
+/* Estilo para a imagem do contato */
+.list-item__imagem img {
+    width: 80px; /* Largura da imagem */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+}
+
+/* Estilo para o conteúdo do contato (nome e e-mail) */
+.list-item__content {
+    padding: 0 20px; /* Espaçamento interno */
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+}
+
+/* Estilo para o nome do contato */
+.list-item__name {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #385555; /* Cor do texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Estilo para o wrapper da lista */
+.list-wrapper {
+    background-color: white; /* Cor de fundo branca */
+    width: 90%; /* Largura de 90% do contêiner pai */
+    max-width: 500px; /* Largura máxima de 500px */
+    max-height: 400px; /* Altura máxima de 400px */
+    overflow-y: auto; /* Adiciona scroll vertical se necessário */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo para o e-mail do contato */
+.list-item__email {
+    margin: 5px 0 0; /* Margem superior */
+    color: #aaa; /* Cor do texto cinza claro */
+}
+
+/* Efeito de hover nos itens da lista */
+.list-item:hover {
+    background-color: #e8e8e8; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para as ações (deletar e editar) */
+.list-item__action {
+    display: flex; /* Usa flexbox para alinhar os ícones */
+    gap: 16px; /* Espaçamento entre os ícones */
+    align-items: center; /* Centraliza os ícones verticalmente */
+    opacity: 0.3; /* Define a opacidade inicial */
+}
+
+/* Mostra as ações ao passar o mouse no item da lista */
+.list-item:hover .list-item__action {
+    display: flex; /* Exibe as ações */
+}
