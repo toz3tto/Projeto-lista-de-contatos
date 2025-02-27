@@ -52,7 +52,7 @@ https://github.com/user-attachments/assets/5764e95c-d824-43e6-a166-9d760f2d27f2
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/toz3tto/lista-de-contatos.git
+   git clone https://github.com/toz3tto/Projeto-lista-de-contatos.git
    
 Navegue até a pasta do projeto:
 
